@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>kewl website</title>
+  <link rel="icon" type="image/jpg" href="Adobe Express - file.jpg">
+
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    iframe {
+      border: none;
+    }
+
+    iframe:focus {
+      outline: none;
+    }
+
+    @keyframes rainbow {
+      0% { color: red; }
+      50% { color: orangered; }
+      100% { color: red; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <style>
+
+    @keyframes bleu {
+      0% {color: blue;}
+      20% {color: #006eff;}
+      40% {color: #00a2ff;}
+      60% {color: #00e5ff;}
+      80% {color: #00ffc8;}
+      90% {color: #00ffdb;}
+      100% {color: blue;}
+      
+
+    }
+
+
+
+    @keyframes da_rainbow {
+      0% {color: red;}
+      20% {color: orangered;}
+      40% {color: yellow;}
+      60% {color: green;}
+      75% {color: #0080ff;}
+      80% {color: purple;}
+      100% {color: red}
+      
+
+    }
+
+  </style>
+
+  <span style="animation: bleu 5s infinite; font-weight:bold; font-size:2em;">
+
+<header>
+  <h1>Welcome to my website</h1>
+  <h2>Welcome to my website</h2>
+  <h3>Welcome to my website</h3>
+  <h4>Welcome to my website</h4>
+  <h5>Welcome to my website</h5>
+  <h6>Welcome to my website</h6>
+</header>
+
+</span>
+
+</body>
+
+<hr>
+
+<!-- YouTube video -->
+
+ <span style="animation: da_rainbow 5s infinite; font-weight:bold; font-size:2em;">
+ <h1>A yt video of mine</h1>
+</span>
+<iframe
+  tabindex="-1"
+  width="1148"
+  height="700"
+  src="https://www.youtube-nocookie.com/embed/UPtpmpaDrSQ"
+  allow="accelerometer; encrypted-media; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+<hr>
+
+<p>
+  This is my first website. This website means a whole lot to me because its my first ever one. Hosted on Netlify <a href="https://kewlpage.netlify.app/">kewlpage.netlify.app</a>
+</p>
+
+<hr>
+
+Be :awesome:
+<br>
+<img src="awesome.jpg" alt="This is Awesome face">
+
+<hr>
+
+My intro song (subject to NEVER change)
+<br>
+<audio controls>
+  <source src="sounds/Plainrock124 Intro s.mp3" type="audio/mpeg">
+</audio>
+
+<hr>
+
+<video id="videoPlayer" controls width="400"></video><br><br>
+<button id="chooseBtn">Choose Video</button>
+<input type="file" id="fileInput" accept="video/*" hidden>
+
+<script>
+  const video = document.getElementById("videoPlayer");
+  const fileInput = document.getElementById("fileInput");
+  const btn = document.getElementById("chooseBtn");
+
+  btn.addEventListener("click", () => fileInput.click());
+
+  fileInput.addEventListener("change", () => {
+    const file = fileInput.files[0];
+    if (!file) return;
+    video.src = URL.createObjectURL(file);
+    video.play();
+  });
+</script>
+
+<hr>
+
+</h1><b>Bold</b><h1>
+<i>Italics</i><br><br>
+<u>Underlined</u><br><br>
+<s>Strikethrough</s><br><br>
+<big>Big</big><br><br>
+<small>Small</small><br><br>
+<sub>Subscript</sub><br><br>
+<sup>Superscript</sup><br><br>
+<tt>Monospaced</tt><br><br>
+<mark style="background-color: blue;">Marked</mark>
+
+<hr>
+
+
+
+<a href="https://neal.fun">
+  <button>go to neal.fun</button>
+</a>
+
+<hr>
+
+<h1>testing out the "Lorem" thing</h1>
+<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+
+</body>
+</html>
